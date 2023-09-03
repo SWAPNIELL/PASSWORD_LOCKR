@@ -1,65 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FORM</title>
     
-    <title>Login and Signup Form</title>
 </head>
 <body>
-    <h1>Login</h1>
-    
-        <label for="loginUsername">Username:</label>
-        <input type="text" id="loginUsername" name="loginUsername" required>
-        <br> 
-        <br>
+    <div>
+        <h2>ENTER/EDIT THE DATA </h2>
+        <form id="entryForm">
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" required><br><br>
 
-        <label for="loginPassword">Password:</label>
-        <input type="password" id="loginPassword" name="loginPassword" required>
-        <br>
-        <br>
-        <input type="submit" value="Login">
-    </form>
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required><br><br>
 
-    <h1>Signup</h1>
-    
-        <label for="signupName">Name:</label>
-        <input type="text" id="signupName" name="signupName" required>
-        <br>
-        <br>
-        <label for="signupUsername">Username:</label>
-        <input type="text" id="signupUsername" name="signupUsername" required>
-        <br>
-        <br>
-        <label for="signupPassword">Password:</label>
-        <input type="password" id="signupPassword" name="signupPassword" required>
-        <br>
-        <br>
-        <input type="submit" value="Signup">
-       
-    </form>
+            <label for="website">Website Name:</label>
+            <input type="text" id="website" name="website" required><br><br>
 
-    <h1>USERS</h1>
-    <table border ="8">
-        <tr>
-            <th>Name</th>
-            <th>Username</th>
-            <th>Password</th>
-        </tr>
-        <tr>
-            <td>john</td>
-            <td>john123</td>
-            <td>123***</td>
-        </tr>
-        <tr>
-            <td>brock</td>
-            <td>brock123</td>
-            <td>123***</td>
-        </tr>
-        <tr>
-            <td>hunter</td>
-            <td>hunter123</td>
-            <td>123***</td>
-        </tr>
-        
-    </table>
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+
+    <div>
+        <h2>LIST OF ENTRIES</h2>
+        <ul id="entryList">
+          
+           
+        </ul>
+    </div>
+
+    <script src="script.js"></script>
 </body>
 </html>
