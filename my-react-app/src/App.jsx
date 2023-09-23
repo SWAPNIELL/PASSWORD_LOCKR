@@ -1,23 +1,24 @@
 import React from "react";
 import Navbar from "./components/Navbar";
-import DashboardPage  from "./components/DashboardPage";
+import DashboardPage from "./components/DashboardPage";
 import LoginPage from "./components/LoginPage";
 import SignUpPage from "./components/SignUpPage";
-import { Switch, Route } from 'react-router-dom';
-import { BrowserRouter as Router } from "react-router-dom";
 
-export default function App() {
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+
+const App = () => {
   return (
     <Router>
-        <div>
+      <div>
         <Navbar />
-        <Switch>
-          <Route path="/" exact component={DashboardPage} />
-          <Route path="/login" component={LoginPage} />
-          <Route path="/signup" component={SignUpPage} />
-        </Switch>
-        </div>
+        <Routes>
+          <Route path="/" element={<DashboardPage />} />
+          <Route path="/login" element={<LoginPage />} />
+          <Route path="/signup" element={<SignUpPage />} />
+        </Routes>
+      </div>
     </Router>
   );
 }
-c
+
+export default App;
