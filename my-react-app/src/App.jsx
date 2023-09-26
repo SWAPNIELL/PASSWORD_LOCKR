@@ -8,7 +8,7 @@ import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 
 const App = () => {
   return (
-    <Router>
+   
       <div>
         <Navbar />
         <Routes>
@@ -17,7 +17,7 @@ const App = () => {
           <Route path="/signup" element={<SignUpPage />} />
         </Routes>
       </div>
-    </Router>
+    
   );
 }
 

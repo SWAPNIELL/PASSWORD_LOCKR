@@ -1,10 +1,11 @@
 import React from 'react'
+import {Link} from "react-router-dom"
 
 function SignUpPage() {
   return (
     <>
      <div className="bg-gray-100 min-h-screen flex items-center justify-center">
-      <div className="bg-white p-4 rounded-lg shadow-md text-center">
+      <div className="bg-white p-4 rounded-lg shadow-md text-center w-[20rem]">
         <marquee className="text-blue-500 font-bold text-xl">SIGNUP</marquee>
         <h2 className="text-2xl font-semibold">Sign Up</h2>
 
@@ -51,6 +52,11 @@ function SignUpPage() {
         >
           Continue with Google
         </button>
+        <div className='mt-4'>
+          <p>ALREADY HAVE AN ACCOUNT??</p>
+          <Link to="/login" className='text-blue-500'>Sign In</Link>
+
+        </div>
       </div>
     </div>
     </>

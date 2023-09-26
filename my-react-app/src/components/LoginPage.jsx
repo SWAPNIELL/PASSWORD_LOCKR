@@ -1,11 +1,12 @@
 import React from 'react'
+import {Link} from "react-router-dom"
 
 function LoginPage() {
   return (
     <>
     <div className="bg-gray-100 min-h-screen flex items-center justify-center">
-      <div className="bg-white p-4 rounded-lg shadow-md text-center">
-        <marquee className="text-blue-500 font-bold text-xl">LOGIN/REGISTER</marquee>
+      <div className="bg-white p-10 rounded-lg shadow-md text-center w-[20rem]">
+        <marquee className="text-blue-500 font-bold text-xl">LOGIN</marquee>
         <h2 className="text-2xl font-semibold">Login</h2>
   
         <div className="mt-4">
@@ -35,12 +36,14 @@ function LoginPage() {
         >
           Login with Google
         </button>
+        <Link to="/signup">
         <button
         id="sign-up-button"
         className="bg-green-500 text-white px-4 py-2 rounded-lg mt-4 w-full"
       >
         Sign Up
       </button>
+      </Link>
       </div>
     </div>
     </>
